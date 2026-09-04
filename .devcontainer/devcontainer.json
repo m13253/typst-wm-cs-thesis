@@ -1,0 +1,21 @@
+{
+    "name": "Typst",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "myriad-dreamin.tinymist"
+            ],
+            "settings": {
+                "tinymist.fontPaths": [
+                    "${workspaceFolder}/fonts"
+                ]
+            }
+        }
+    },
+    "remoteEnv": {
+        "TYPST_FONT_PATHS": "${containerWorkspaceFolder}/fonts"
+    }
+}
